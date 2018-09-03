@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff; }
+
+a {
+  font-size: 14px; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Sawarabi Gothic', sans-serif; }
+
+* p {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  line-height: 1.6em; }
+
+* h1 {
+  letter-spacing: 1px; }
+
+* h2 {
+  letter-spacing: 1px; }
+
+* h3 {
+  letter-spacing: 1px; }
+
+* h4 {
+  letter-spacing: 1px; }
+
+* h5 {
+  letter-spacing: 1px; }
+
+* h6 {
+  letter-spacing: 1px; }
+
+* h1 {
+  font-size: 22px; }
+
+* h3 {
+  color: #414141; }
+
+* h4 {
+  color: #3F3F3F; }
+
+* h5 {
+  color: #4C4C4C; }
+
+* h6 {
+  color: #AAA5A5; }
+
+.title {
+  background-color: rgba(115, 239, 250, 0.3);
+  padding: 10px 5px 10px 25px; }
+
+.title h1, .title h2, .title h3, .title h4 {
+  color: white;
+  text-shadow: 0px 0px 0px 2px black; }
+
+.button {
+  display: table;
+  float: left;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: sans-serif !important;
+  transition-duration: 100ms;
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 5px;
+  border-color: #FDFAE3;
+  box-shadow: 1px 1px 0px #c4c4c4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 12px 13px;
+  text-transform: capitalize;
+  color: white;
+  margin: 10px; }
+
+.btn-corner-top-left {
+  grid-area: corner-top-left; }
+
+.btn-edge-left {
+  grid-area: edge-left; }
+
+.btn-corner-top-middle {
+  grid-area: corner-top-middle; }
+
+.btn-edge-middle {
+  grid-area: edge-middle; }
+
+.btn-red {
+  background-color: #dc0000; }
+
+.btn-red:hover {
+  background-color: #C50E0E; }
+
+.btn-blue {
+  background-color: #017eff; }
+
+.btn-blue:hover {
+  background-color: #679ED7 !important; }
+
+.btn-yellow {
+  background-color: #f5ff00; }
+
+.btn-yellow:hover {
+  background-color: #E7F00D; }
+
+.btn-green {
+  background-color: #00e101; }
+
+.btn-green:hover {
+  background-color: #15CA16 !important; }
+
+.btn-white {
+  background-color: #fff; }
+
+.btn-white:hover {
+  background-color: #DBDADA; }
+
+.btn-orange {
+  background-color: #ff8a19; }
+
+.btn-orange:hover {
+  background-color: #E48326; }
+
+.btn-edge {
+  border-radius: 8px 8px 10px 10px; }
+
+.btn-center {
+  border-radius: 100%; }
+
+footer {
+  background-color: #323232;
+  padding: 26px;
+  overflow: auto; }
+
+.footer-text-is-link {
+  text-decoration: none;
+  color: #7A7A7A; }
+
+.footer-text-is-link:hover {
+  color: #949393; }

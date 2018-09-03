@@ -1,0 +1,200 @@
+$yellow: #f5ff00;
+$orange: #ff8a19;
+$blue: #017eff;
+$green: #00e101;
+$red: #dc0000;
+$white: #fff;
+
+$colors: (
+	yellow: #f5ff00,
+	orange: #ff8a19,
+	blue: #017eff,
+	green: #00e101,
+	red: #dc0000,
+	white: #fff		
+);	
+
+$yellow-hover: #E7F00D;
+$orange-hover: #E48326;
+$blue-hover: #679ED7;
+$green-hover: #15CA16;
+$red-hover: #C50E0E;
+$white-hover: #DBDADA;
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+}
+
+a {
+	font-size: 14px;
+}
+
+* {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+
+		font-family: 'Sawarabi Gothic', sans-serif;
+
+		p {
+			font-size: 14px;
+			letter-spacing: 0.08em;
+			line-height: 1.6em;
+		}
+
+		@for $index from 1 through 6 {
+			h#{$index} {
+				letter-spacing: 1px;
+			}
+		}
+
+		h1 {
+			font-size: 22px;
+		}
+
+		h3 {
+			color: #414141;
+		}
+
+		h4 {
+			color: #3F3F3F;
+		}
+
+		h5 {
+			color: #4C4C4C;
+		}
+
+		h6 {
+			color: #AAA5A5;
+		}
+}
+
+.title {
+	background-color: rgba(115, 239, 250, 0.3);
+	padding: 10px 5px 10px 25px;
+
+	h1, h2, h3, h4 {
+		color: white;
+		text-shadow: 0px 0px 0px 2px black;
+	}
+}
+
+$buttons-columns: left, middle, right;
+
+$buttons-rows: top, middle, bottom;
+$buttons-labels: corner, edge, corner,
+									corner, middle, edge,
+									corner, edge, corner;
+
+$row-buttons: (
+	corner-top: 'top',
+	edge: 'middle',
+	corner-bottom: 'bottom'
+);
+
+.button {
+	display: table;
+	float: left;
+	text-decoration: none;
+	font-weight: 600;
+	font-family: sans-serif !important;
+	transition-duration: 100ms;
+	border: {
+		style: solid;
+		width: 4px;
+		radius: 5px;
+		color: #FDFAE3;
+	};
+	
+	box-shadow: 1px 1px 0px #c4c4c4;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 12px 13px;
+	text-transform: capitalize;
+	color: white;
+	margin: 10px;
+}
+
+
+@for $i from 1 to length($column-buttons) {
+	@for $j from 1 to length($row-buttons) {
+		.btn-#{nth(map-keys($row-buttons), $j)}-#{nth(map-keys($column-buttons), $i)} {
+			grid-area: #{nth(map-keys($row-buttons), $j)}-#{nth(map-keys($column-buttons), $i))};
+		}
+	}
+}
+
+
+.btn-red {
+	background-color: $red;
+
+	&:hover {
+		background-color: $red-hover;
+	}
+}
+
+.btn-blue {
+	background-color: $blue;
+
+	&:hover {
+		background-color: $blue-hover !important;
+	}
+}
+
+.btn-yellow {
+	background-color: $yellow;
+
+	&:hover {
+		background-color: $yellow-hover;
+	}
+}
+
+.btn-green {
+	background-color: $green;
+
+	&:hover {
+		background-color: $green-hover !important;
+	}
+}
+
+.btn-white {
+	background-color: $white;
+
+	&:hover {
+		background-color: $white-hover;
+	}
+}
+
+.btn-orange {
+	background-color: $orange;
+
+	&:hover {
+		background-color: $orange-hover;
+	}
+}
+
+.btn-edge {
+	border-radius: 8px 8px 10px 10px;
+}
+
+.btn-center {
+	border-radius: 100%;
+}
+
+footer {
+	background-color: #323232;
+	padding: 26px;
+	overflow: auto;
+}
+
+.footer-text-is-link {
+	text-decoration: none;
+	color: #7A7A7A;
+	&:hover {
+		color: #949393;
+	}
+}

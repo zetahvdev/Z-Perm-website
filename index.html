@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rubik`s Mania</title>
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	
+	<link rel="stylesheet" href="styles/index-style.css">
+	<link rel="stylesheet" href="styles/theme.css">
+	<script type="text/javascript" src="Scripts/general_bhv.js"></script>
+
+	<!-- Fonts, icons,etc... -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Sawarabi+Gothic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu" rel="stylesheet">
+
+	
+</head>
+<body>
+	<nav>
+		<object  data="rubik.svg" type="image/svg+xml" width="24px" height="24px" style="transform: translateY(4px); margin-right: 4px;"></object>
+		<a><h2 id="logo">Z-PERM</h2></a>
+		<div class="navbar" id="main-nav">
+			<div class="nav-btn-red"><a href="#" style="grid-area: QA">Q&A</a></div>
+			<div class="nav-btn-orange"><a href="javascript:void(0)" style="grid-area: Cronometer">Cronometer</a></div>
+			<div class="nav-btn-blue nav-dropdown">
+				<a href="#" style="grid-area: Fridrich">Fridrich <span><i class="fa fa-angle-down"></i></span></a>
+				<div class="nav-dropdown-box">
+					<a href="#" class="button btn-red btn-edge" style="grid-area: corner-bottom-left">Hello</a>
+					<a href="#" class="button btn-yellow btn-edge">HElo</a>
+				</div>
+			</div>
+			<a href="#" style="grid-area: Home" class="nav-current">Home</a>
+			<a href="#" style="grid-area: Language"><i class="fas fa-globe-americas fa-2x" id="nav-language"></i></a>
+		</div>
+	</nav>
+
+	<header style="width: 100%">
+		<div class="header-box">
+			<div id="header-title">
+				<h1>Rubik`s Cube Madness</h1>
+				<a href="#" class="header-btn title-center" style="font-size: 20px;">Learn Now!</a>
+			</div>
+			<img src="rc-wall.jpg" width="100%" height="750px">
+			<div class="header-bottom">
+				<h1><object type="image/svg+xml" data="rubik-cube.svg" width="29px" height="29px" style="transform: translateY(6px);"></object> Choose Your Level Below</h1>
+			</div>
+		</div>
+		<!--canvas id="header-canvas"></canvas-->
+	</header>
+
+	<section>
+		<div class="box-container">
+			<div class="box-content">
+				<div class="box-content-main">
+					<div class="img-box-container">
+						<img src="rc-begineer.jpg" alt="" width="100%" height="100%">
+					</div>
+					<h1>Are you an absolute beginner?</h1>
+					<p>So, you solve it huh? everybody thinks you`re beyond intelligence. But, What`s next you might ask yourself.</p>
+					<p>Well, learning to master the rubik`s cube it`s not that easy and it requires pacience and hard work, but it`s worth all the effort and you will feel how great can a cube be. So get started here, with FingerTricks that will improve your time and most of all, it requires no algorithm!!.</p>
+					<a href="#" class="button btn-red btn-edge">Learn More...</a>
+				</div>
+			</div>
+			<div class="box-content">
+				<div class="box-content-main">
+					<div class="img-box-container">
+						<img src="rc-adbeginner.jpg" alt="" width="100%" height="100%">
+					</div>
+					<h1>Do you know what Fridrich`s method is? </h1>
+					<p>There`s a tone a ways to solve the rubik`s cube, some of them better than others. What is it the fastest? Well, there is not the true method that quaranty you miracles improvements, but we have no doubt that the Fridrich`s Methods it is really good and yeah it was the method used to break the World`s record: 4.25 seconds.</p>
+					<a href="#" class="button btn-blue btn-edge">Get Started</a>
+				</div>
+			</div>
+			<div class="box-content">
+				<div class="box-content-main">
+					<div class="img-box-container">
+						<img src="rc-intermediate.jpg" alt="" width="100%" height="100%">
+					</div>
+					<h1>You think you are already a speedcuber?</h1>
+					<p>Practice makes perfect and as a speedcuber all good habits must be part of your daily solves. Learn this tips and tricks that will every solve a good experience not only for you who is going to see the improvements but your superiors, the Professionals</p>
+					<a href="#" class="button btn-green btn-edge">Get Started</a>
+				</div>
+			</div>
+			<div class="box-content">
+				<div class="box-content-main">
+					<div class="img-box-container">
+						<img src="rc-advanced.jpg" alt="" width="100%" height="100%">
+					</div>
+					<h1>You think you are done?</h1>
+					<p>Practice makes perfect and as a speedcuber all good habits must be part of your daily. Learn this tips and tricks that will every solve a good experience not only for you but your superiors, the Professionals...</p>
+					<a href="#" class="button btn-yellow btn-edge">Learn More...</a>
+				</div>
+			</div>
+		</div>
+		<div id="sidebar">
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="footer-title">
+			<h1>Join our Community</h1>
+		</div>
+		<div class="footer-link-icons">
+			<ul>
+				<li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+				<li><a href="#"><i class="fa fa-github-square"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i>	
+</a></li>
+				<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+			</ul>
+		</div>
+		<div class="footer-links-list">
+			<ul class="footer-links-text">
+				<h5 class="footer-link-title">Extra Methods:</h5>
+				<li><a href="#" class="footer-text-is-link">Hybrid blocks</a></li>
+				<li><a href="#" class="footer-text-is-link">F2l</a></li>
+				<li><a href="#" class="footer-text-is-link">OLLPS</a></li>
+			</ul>
+		</div>
+		<div class="footer-links-list">
+			<ul class="footer-links-text">
+				<h5 class="footer-link-title">Wikipedia Links:</h5>
+				<li><a href="#" class="footer-text-is-link">Speedcubing</a></li>
+				<li><a href="#" class="footer-text-is-link">Color Schemes</a></li>
+				<li><a href="#" class="footer-text-is-link">Fridich History</a></li>
+			</ul>
+		</div>
+		<div class="footer-links-list">
+			<ul class="footer-links-text">
+				<h5 class="footer-link-title">Speedcubing Events:</h5>
+				<li><a href="#" class="footer-text-is-link">Mexico total speedcubing 2016</a></li>
+				<li><a href="#" class="footer-text-is-link">neverland France competition</a></li>
+				<li><a href="#" class="footer-text-is-link">Golden age Costa Rica</a></li>
+			</ul>
+		</div>
+		<div class="footer-links-list">
+			<ul class="footer-links-text">
+				<h5 class="footer-link-title">Reference:</h5>
+				<li><a href="#" class="footer-text-is-link">Wikipedia - speedcubing</a></li>
+				<li><a href="#" class="footer-text-is-link">Art of colors - DapDop.com</a></li>
+				<li><a href="#" class="footer-text-is-link">Group theory - Wikipedia</a></li>
+			</ul>
+		</div>
+	</footer>
+	<script type="text/javascript" src="Scripts/utilities.js"></script>
+	<script type="text/javascript" src="Scripts/cubes.js"></script>
+	<script type="text/javascript" src="Scripts/header_canvas.js"></script>
+</body>
+</html>
